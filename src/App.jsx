@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 
 export default function App() {
   const { lang } = useContext(LanguageContext);
@@ -17,6 +18,7 @@ export default function App() {
       <Hero hero={data.hero} />
       <Skills skills={data.skills} />
       <Profile profile={data.profile} />
+      <Projects projects={data.projects} />
     </>
   );
 }
