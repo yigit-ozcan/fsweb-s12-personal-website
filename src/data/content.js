@@ -1,28 +1,22 @@
 export const content = {
   en: {
     hero: {
-      greeting: "Hi 👋",
-      name: "I'm Yiğit",
-      title: "Frontend Developer",
-      subtitle: "I build modern, responsive web interfaces.",
+      title: "I am a Frontend Developer...",
+      subtitle:
+        "...who likes to craft solid and scalable frontend products with great user experiences.",
       profileImage: "/assets/profile.png",
       socials: [
         {
-          name: "linkedin",
-          icon: "/assets/linkedin.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          name: "github",
+          name: "Github",
           icon: "/assets/github.svg",
           url: "https://github.com",
         },
+        {
+          name: "Linkedin",
+          icon: "/assets/linkedin.svg",
+          url: "https://linkedin.com",
+        },
       ],
-    },
-
-    about: {
-      title: "About Me",
-      text: "I am a frontend developer focused on building clean, user-friendly interfaces using modern web technologies.",
     },
 
     skills: {
@@ -36,24 +30,39 @@ export const content = {
       ],
     },
 
+    profile: {
+      title: "Profile",
+      basicInfo: [
+        { label: "Birth Date", value: "24.03.1996" },
+        { label: "Location", value: "Ankara" },
+        {
+          label: "Education",
+          value: "Hacettepe University, Biology (2016)",
+        },
+        { label: "Preferred Role", value: "Frontend, UI" },
+      ],
+      aboutText:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    },
+
     projects: {
       title: "Projects",
       items: [
         {
-          name: "Personal Portfolio",
+          name: "Workintech",
           description:
-            "A responsive personal website built with React and Tailwind.",
+            "A skills assessment project where I developed a responsive interface using React and modern CSS techniques.",
           image: "/assets/project-1.png",
           tech: ["React", "Tailwind"],
           github: "https://github.com",
           live: "https://example.com",
         },
         {
-          name: "Movie Database App",
+          name: "Journey",
           description:
-            "A movie browsing application using public APIs and Redux.",
+            "A personal journey project focused on clean UI, component-based architecture, and reusable layouts.",
           image: "/assets/project-2.png",
-          tech: ["React", "Redux"],
+          tech: ["React", "CSS"],
           github: "https://github.com",
           live: "https://example.com",
         },
@@ -61,35 +70,29 @@ export const content = {
     },
 
     cta: {
-      text: "Currently looking for a Frontend Developer position.",
+      text: "Send me a message!",
       buttonText: "Contact Me",
     },
   },
 
   tr: {
     hero: {
-      greeting: "Merhaba 👋",
-      name: "Ben Yiğit",
-      title: "Frontend Developer",
-      subtitle: "Modern ve responsive arayüzler geliştiriyorum.",
+      title: "Ben bir Frontend Developer’ım...",
+      subtitle:
+        "...ölçeklenebilir ve kullanıcı deneyimi odaklı arayüzler geliştirmeyi seviyorum.",
       profileImage: "/assets/profile.png",
       socials: [
         {
-          name: "linkedin",
-          icon: "/assets/linkedin.svg",
-          url: "https://linkedin.com",
-        },
-        {
-          name: "github",
+          name: "Github",
           icon: "/assets/github.svg",
           url: "https://github.com",
         },
+        {
+          name: "Linkedin",
+          icon: "/assets/linkedin.svg",
+          url: "https://linkedin.com",
+        },
       ],
-    },
-
-    about: {
-      title: "Hakkımda",
-      text: "Modern web teknolojileri kullanarak kullanıcı dostu arayüzler geliştiren bir frontend developerım.",
     },
 
     skills: {
@@ -103,24 +106,40 @@ export const content = {
       ],
     },
 
+    profile: {
+      title: "Profil",
+      basicInfo: [
+        { label: "Doğum Tarihi", value: "24.03.1996" },
+        { label: "İkamet Şehri", value: "Ankara" },
+        {
+          label: "Eğitim Durumu",
+          value: "Hacettepe Üniversitesi, Biyoloji (2016)",
+        },
+        { label: "Tercih Ettiği Rol", value: "Frontend, UI" },
+      ],
+      image: "/assets/profile-section.png",
+      aboutText:
+        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+    },
+
     projects: {
       title: "Projeler",
       items: [
         {
-          name: "Kişisel Portföy",
+          name: "Workintech",
           description:
-            "React ve Tailwind kullanılarak geliştirilmiş responsive kişisel web sitesi.",
+            "React ve modern CSS teknikleri kullanılarak geliştirilmiş responsive arayüz projesi.",
           image: "/assets/project-1.png",
           tech: ["React", "Tailwind"],
           github: "https://github.com",
           live: "https://example.com",
         },
         {
-          name: "Film Veritabanı",
+          name: "Journey",
           description:
-            "Redux ve API kullanılarak geliştirilmiş film uygulaması.",
+            "Temiz UI, component mimarisi ve tekrar kullanılabilir layout odaklı kişisel proje.",
           image: "/assets/project-2.png",
-          tech: ["React", "Redux"],
+          tech: ["React", "CSS"],
           github: "https://github.com",
           live: "https://example.com",
         },
@@ -128,7 +147,7 @@ export const content = {
     },
 
     cta: {
-      text: "Şu anda Frontend Developer pozisyonlarıyla ilgileniyorum.",
+      text: "Bana bir mesaj gönder!",
       buttonText: "İletişime Geç",
     },
   },
