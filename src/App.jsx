@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
+import CTA from "./components/CTA";
 
 export default function App() {
   const { lang } = useContext(LanguageContext);
@@ -19,6 +20,7 @@ export default function App() {
       <Skills skills={data.skills} />
       <Profile profile={data.profile} />
       <Projects projects={data.projects} />
+      <CTA cta={data.cta} />
     </>
   );
 }

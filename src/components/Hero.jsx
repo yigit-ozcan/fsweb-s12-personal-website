@@ -1,12 +1,12 @@
 const Hero = ({ hero }) => {
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden">
-      <div className="absolute inset-0">
-        <div className="absolute left-0 top-0 h-full w-1/2 bg-indigo-700" />
-        <div className="absolute right-0 top-0 h-full w-1/2 bg-lime-300" />
+      <div className="absolute inset-0 z-0">
+        <div className="absolute left-0 top-0 h-full w-[65%] bg-indigo-700" />
+        <div className="absolute right-0 top-0 h-full w-[35%] bg-lime-300" />
       </div>
-      <div className="relative">
-        <div className="mx-auto max-w-6xl px-6 py-12">
+      <div className="relative z-10 flex min-h-screen items-center">
+        <div className="mx-auto max-w-6xl px-6 pt-32 pb-12">
           <div className="grid grid-cols-2 items-center gap-12">
             <div>
               <h1 className="text-6xl font-extrabold leading-tight text-lime-300">
@@ -31,7 +31,7 @@ const Hero = ({ hero }) => {
               </div>
             </div>
             <div>
-              <div className="mx-auto w-[380px] overflow-hidden rounded-2xl shadow-2xl">
+              <div className="mx-auto w-[450px] h-[550px] overflow-hidden rounded-2xl shadow-2xl relative z-10">
                 <img
                   src={hero.profileImage}
                   alt="Profile"

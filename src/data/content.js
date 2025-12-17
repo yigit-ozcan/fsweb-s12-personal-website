@@ -4,7 +4,7 @@ export const content = {
       title: "I am a Frontend Developer...",
       subtitle:
         "...who likes to craft solid and scalable frontend products with great user experiences.",
-      profileImage: "/assets/profile.png",
+      profileImage: "/assets/hero/hero-image.png",
       socials: [
         {
           name: "Github",
@@ -71,7 +71,14 @@ export const content = {
 
     cta: {
       text: "Send me a message!",
-      buttonText: "Contact Me",
+      description:
+        "Got a question or proposal, or just want to say hello? Go ahead.",
+      email: "almilasucode@gmail.com",
+      socials: [
+        { name: "twitter", url: "https://twitter.com/" },
+        { name: "dribbble", url: "https://dribbble.com/" },
+        { name: "instagram", url: "https://instagram.com/" },
+      ],
     },
   },
 
@@ -80,7 +87,7 @@ export const content = {
       title: "Ben bir Frontend Developer’ım...",
       subtitle:
         "...ölçeklenebilir ve kullanıcı deneyimi odaklı arayüzler geliştirmeyi seviyorum.",
-      profileImage: "/assets/profile.png",
+      profileImage: "/assets/hero/hero-image.png",
       socials: [
         {
           name: "Github",
@@ -148,7 +155,14 @@ export const content = {
 
     cta: {
       text: "Bana bir mesaj gönder!",
-      buttonText: "İletişime Geç",
+      description:
+        "Bir sorunuz mu var, iş teklifi mi yapmak istiyorsunuz, yoksa sadece merhaba demek mi? Buyurun.",
+      email: "almilasucode@gmail.com",
+      socials: [
+        { name: "twitter", url: "https://twitter.com/" },
+        { name: "dribbble", url: "https://dribbble.com/" },
+        { name: "instagram", url: "https://instagram.com/" },
+      ],
     },
   },
 };
