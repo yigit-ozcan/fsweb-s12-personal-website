@@ -34,17 +34,17 @@ export const content = {
     profile: {
       title: "Profile",
       basicInfo: [
-        { label: "Birth Date", value: "24.03.1996" },
-        { label: "Location", value: "Ankara" },
+        { label: "Birth Date", value: "05.10.2001" },
+        { label: "Location", value: "Kocaeli" },
         {
           label: "Education",
-          value: "Hacettepe University, Biology (2016)",
+          value: "Doğuş Üniversitesi, Yazılım Mühendisliği (2024)",
         },
-        { label: "Preferred Role", value: "Frontend, UI" },
+        { label: "Preferred Role", value: "Frontend, Backend" },
       ],
       image: "/assets/profile/profile-image.png",
       aboutText:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+        "I am a frontend developer who builds clean, responsive, and user-focused interfaces using React and modern frontend tools.",
     },
 
     projects: {
@@ -119,17 +119,17 @@ export const content = {
     profile: {
       title: "Profil",
       basicInfo: [
-        { label: "Doğum Tarihi", value: "24.03.1996" },
-        { label: "İkamet Şehri", value: "Ankara" },
+        { label: "Birth Date", value: "05.10.2001" },
+        { label: "Location", value: "Kocaeli" },
         {
-          label: "Eğitim Durumu",
-          value: "Hacettepe Üniversitesi, Biyoloji (2016)",
+          label: "Education",
+          value: "Doğuş Üniversitesi, Yazılım Mühendisliği (2024)",
         },
-        { label: "Tercih Ettiği Rol", value: "Frontend, UI" },
+        { label: "Preferred Role", value: "Frontend, Backend" },
       ],
       image: "/assets/profile/profile-image.png",
       aboutText:
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+        "React ve modern frontend araçlarıyla temiz, responsive ve kullanıcı odaklı arayüzler geliştiren bir frontend geliştiricisiyim.",
     },
 
     projects: {
