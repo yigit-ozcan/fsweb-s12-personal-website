@@ -54,7 +54,7 @@ export const content = {
           name: "Workintech",
           description:
             "A skills assessment project where I developed a responsive interface using React and modern CSS techniques.",
-          image: "/assets/project-1.png",
+          image: "/assets/projects/project-journey.png",
           tech: ["React", "Tailwind"],
           github: "https://github.com",
           live: "https://example.com",
@@ -63,7 +63,7 @@ export const content = {
           name: "Journey",
           description:
             "A personal journey project focused on clean UI, component-based architecture, and reusable layouts.",
-          image: "/assets/project-2.png",
+          image: "/assets/projects/project-workintech.png",
           tech: ["React", "CSS"],
           github: "https://github.com",
           live: "https://example.com",
@@ -139,7 +139,7 @@ export const content = {
           name: "Workintech",
           description:
             "React ve modern CSS teknikleri kullanılarak geliştirilmiş responsive arayüz projesi.",
-          image: "/assets/project-1.png",
+          image: "/assets/projects/project-journey.png",
           tech: ["React", "Tailwind"],
           github: "https://github.com",
           live: "https://example.com",
@@ -148,7 +148,7 @@ export const content = {
           name: "Journey",
           description:
             "Temiz UI, component mimarisi ve tekrar kullanılabilir layout odaklı kişisel proje.",
-          image: "/assets/project-2.png",
+          image: "/assets/projects/project-workintech.png",
           tech: ["React", "CSS"],
           github: "https://github.com",
           live: "https://example.com",

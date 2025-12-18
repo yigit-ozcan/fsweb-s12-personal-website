@@ -1,19 +1,18 @@
 const Projects = ({ projects }) => {
   return (
-    <section id="projects">
+    <section id="projects" className="bg-lime-300">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <h2 className="text-3xl font-bold text-center mb-16">
+        <h2 className="text-6xl font-bold text-indigo-700 mb-16">
           {projects.title}
         </h2>
 
-        <div className="space-y-12">
+        <div className="space-y-16">
           {projects.items.map((item) => (
             <article
               key={item.name}
-              className="bg-white rounded-2xl shadow-lg overflow-hidden"
+              className="bg-white rounded-3xl shadow-xl overflow-hidden transition hover:shadow-2xl"
             >
               <div className="grid grid-cols-2 gap-8">
-                {/* Image wrapper */}
                 <div className="h-full overflow-hidden">
                   <img
                     src={item.image}
@@ -21,10 +20,10 @@ const Projects = ({ projects }) => {
                     className="h-full w-full object-cover"
                   />
                 </div>
-
-                {/* Content */}
-                <div className="py-8 pr-8">
-                  <h3 className="text-xl font-semibold">{item.name}</h3>
+                <div className="py-10 px-10">
+                  <h3 className="text-4xl font-bold text-indigo-700">
+                    {item.name}
+                  </h3>
 
                   <p className="mt-4 text-gray-700 leading-relaxed">
                     {item.description}
@@ -34,7 +33,7 @@ const Projects = ({ projects }) => {
                     {item.tech.map((t) => (
                       <li
                         key={t}
-                        className="px-3 py-1 rounded-full bg-gray-100"
+                        className="px-4 py-1.5 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transition"
                       >
                         {t}
                       </li>
@@ -46,7 +45,7 @@ const Projects = ({ projects }) => {
                       href={item.live}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-block mr-4 text-sm font-semibold"
+                      className="inline-block mr-6 text-sm font-semibold text-indigo-900 underline underline-offset-4"
                     >
                       View Live
                     </a>
@@ -55,7 +54,7 @@ const Projects = ({ projects }) => {
                       href={item.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-block text-sm font-semibold"
+                      className="inline-block mr-6 text-sm font-semibold text-indigo-900 underline underline-offset-4"
                     >
                       Github
                     </a>
