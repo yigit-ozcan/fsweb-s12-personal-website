@@ -15,7 +15,7 @@ const Header = () => {
 
       <div className="relative h-full grid grid-cols-[65%_35%] items-center px-6">
         <div className="flex items-center max-w-6xl mx-auto w-full">
-          <span className="text-lime-300 font-bold text-3xl pl-87">yiğit</span>
+          <span className="text-lime-300 font-bold text-3xl pl-88">yiğit</span>
 
           <button
             onClick={toggleLang}

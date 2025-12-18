@@ -12,7 +12,7 @@ const Hero = ({ hero }) => {
               <h1 className="text-6xl font-extrabold leading-tight text-lime-300">
                 {hero.title}
               </h1>
-              <p className="mt-6 max-w-md text-lg text-white/90">
+              <p className="mt-6 max-w-md text-xl text-white/90 font-semibold">
                 {hero.subtitle}
               </p>
               <div className="mt-8 flex gap-4">
@@ -22,7 +22,7 @@ const Hero = ({ hero }) => {
                     href={s.url}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex items-center gap-2 rounded-md bg-white px-4 py-2 text-sm font-semibold text-indigo-700 shadow"
+                    className="inline-flex items-center gap-3 rounded-md bg-white px-4 py-3 text-sm font-semibold text-indigo-700 shadow"
                   >
                     <img src={s.icon} alt={s.name} className="h-5 w-5" />
                     <span>{s.name}</span>
