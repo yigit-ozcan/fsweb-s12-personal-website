@@ -1,16 +1,26 @@
-# React + Vite
+Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo:
+https://YOUR-VERCEL-LINK.vercel.app
 
-Currently, two official plugins are available:
+This project is a personal portfolio website developed with React and Vite. The purpose of the project is to demonstrate frontend development skills including component-based architecture, state management, responsive design, theme handling, and external API communication.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application is structured using separate React components for each section of the page. These sections include Header, Hero, Skills, Profile, Projects, and a Call To Action (CTA) area. All sections are rendered dynamically and organized in a clean, maintainable structure.
 
-## React Compiler
+Tailwind CSS is used for styling. The layout is fully responsive and adapts to desktop, tablet, and mobile screen sizes. A dark and light theme system is implemented using React Context API. Theme changes are handled with conditional Tailwind classes without using Tailwind’s dark mode feature. The selected theme is persisted using localStorage so that user preference is preserved between page reloads.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Static data such as skills, profile information, and project details are stored in local JSON files. These data sets are rendered using the map method to ensure scalability and clean component logic.
 
-## Expanding the ESLint configuration
+The Call To Action section demonstrates external API communication. Axios is used to send a POST request to the Reqres API endpoint at https://reqres.in/api/workintech. Basic success and error handling is implemented to show asynchronous data flow and external service interaction.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No external internationalization library is used. Global state such as theme management is handled using Context API in order to demonstrate an understanding of React’s built-in state management patterns.
+
+The project is deployed using Vercel. The production build is created with Vite and served from the dist directory. The application is fully functional in the deployed environment.
+
+Technologies used in this project include React, Vite, Tailwind CSS, Axios, JavaScript (ES6+), and Context API.
+
+This project aims to combine UI design, React fundamentals, and deployment into a single, complete frontend application.
+
+Author:
+Yiğit Özcan
+Frontend Developer
