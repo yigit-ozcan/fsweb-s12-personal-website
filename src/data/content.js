@@ -8,12 +8,12 @@ export const content = {
       socials: [
         {
           name: "Github",
-          icon: "/assets/github.svg",
+          icon: "github",
           url: "https://github.com",
         },
         {
           name: "Linkedin",
-          icon: "/assets/linkedin.svg",
+          icon: "linkedin",
           url: "https://linkedin.com",
         },
       ],
@@ -75,11 +75,11 @@ export const content = {
       text: "Send me a message!",
       description:
         "Got a question or proposal, or just want to say hello? Go ahead.",
-      email: "almilasucode@gmail.com",
+      email: "oozcan.yigitt@gmail.com",
       socials: [
-        { name: "twitter", url: "https://twitter.com/" },
-        { name: "dribbble", url: "https://dribbble.com/" },
-        { name: "instagram", url: "https://instagram.com/" },
+        { name: "Twitter", url: "#", icon: "twitter" },
+        { name: "Email", url: "#", icon: "email" },
+        { name: "Instagram", url: "#", icon: "instagram" },
       ],
     },
   },
@@ -93,12 +93,12 @@ export const content = {
       socials: [
         {
           name: "Github",
-          icon: "/assets/github.svg",
+          icon: "github",
           url: "https://github.com",
         },
         {
           name: "Linkedin",
-          icon: "/assets/linkedin.svg",
+          icon: "linkedin",
           url: "https://linkedin.com",
         },
       ],
@@ -160,11 +160,11 @@ export const content = {
       text: "Bana bir mesaj gönder!",
       description:
         "Bir sorunuz mu var, iş teklifi mi yapmak istiyorsunuz, yoksa sadece merhaba demek mi? Buyurun.",
-      email: "almilasucode@gmail.com",
+      email: "oozcan.yigitt@gmail.com",
       socials: [
-        { name: "twitter", url: "https://twitter.com/" },
-        { name: "dribbble", url: "https://dribbble.com/" },
-        { name: "instagram", url: "https://instagram.com/" },
+        { name: "Twitter", url: "#", icon: "twitter" },
+        { name: "Email", url: "#", icon: "email" },
+        { name: "Instagram", url: "#", icon: "instagram" },
       ],
     },
   },

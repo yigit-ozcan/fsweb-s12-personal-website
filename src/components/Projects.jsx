@@ -1,6 +1,6 @@
 const Projects = ({ projects }) => {
   return (
-    <section id="projects" className="bg-lime-300">
+    <section id="projects" className="bg-lime-200">
       <div className="mx-auto max-w-6xl px-6 py-24">
         <h2 className="text-6xl font-bold text-indigo-700 mb-16">
           {projects.title}

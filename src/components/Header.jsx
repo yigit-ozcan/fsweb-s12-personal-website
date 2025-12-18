@@ -10,16 +10,16 @@ const Header = () => {
     <header className="absolute top-0 left-0 w-full h-20 z-30">
       <div className="absolute inset-0">
         <div className="absolute left-0 top-0 h-full w-[65%] bg-indigo-700" />
-        <div className="absolute right-0 top-0 h-full w-[35%] bg-lime-300" />
+        <div className="absolute right-0 top-0 h-full w-[35%] bg-lime-200" />
       </div>
 
       <div className="relative h-full grid grid-cols-[65%_35%] items-center px-6">
         <div className="flex items-center max-w-6xl mx-auto w-full">
-          <span className="text-lime-300 font-bold text-3xl pl-88">yiğit</span>
+          <span className="text-lime-200 font-bold text-3xl pl-88">yiğit</span>
 
           <button
             onClick={toggleLang}
-            className="ml-auto text-l font-semibold tracking-widest text-lime-300"
+            className="ml-auto text-l font-semibold tracking-widest text-lime-200"
           >
             {lang === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
           </button>

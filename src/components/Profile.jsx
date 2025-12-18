@@ -2,7 +2,7 @@ const Profile = ({ profile }) => {
   return (
     <section id="profile" className="bg-indigo-700 text-white">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <h2 className="text-6xl font-bold mb-16 text-lime-300">
+        <h2 className="text-6xl font-bold mb-16 text-lime-200">
           {profile.title}
         </h2>
         <div className="grid grid-cols-[1.2fr_1fr_1.2fr] gap-16 items-center">
@@ -16,7 +16,7 @@ const Profile = ({ profile }) => {
                   key={item.label}
                   className="grid grid-cols-[180px_1fr] mb-4"
                 >
-                  <span className="font-medium text-lg text-lime-300 font-semibold w-32">
+                  <span className="font-medium text-lg text-lime-200 font-semibold w-32">
                     {item.label}
                   </span>
                   <span className="text-white/90">{item.value}</span>

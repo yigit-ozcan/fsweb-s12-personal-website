@@ -1,15 +1,23 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
+const iconMap = {
+  github: faGithub,
+  linkedin: faLinkedin,
+};
+
 const Hero = ({ hero }) => {
   return (
     <section id="hero" className="relative min-h-screen overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute left-0 top-0 h-full w-[65%] bg-indigo-700" />
-        <div className="absolute right-0 top-0 h-full w-[35%] bg-lime-300" />
+        <div className="absolute right-0 top-0 h-full w-[35%] bg-lime-200" />
       </div>
       <div className="relative z-10 flex min-h-screen items-center">
         <div className="mx-auto max-w-6xl px-6 pt-32 pb-12">
           <div className="grid grid-cols-2 items-center gap-12">
             <div>
-              <h1 className="text-6xl font-extrabold leading-tight text-lime-300">
+              <h1 className="text-6xl font-extrabold leading-tight text-lime-200">
                 {hero.title}
               </h1>
               <p className="mt-6 max-w-md text-xl text-white/90 font-semibold">
@@ -24,7 +32,10 @@ const Hero = ({ hero }) => {
                     rel="noreferrer"
                     className="inline-flex items-center gap-3 rounded-md bg-white px-4 py-3 text-sm font-semibold text-indigo-700 shadow"
                   >
-                    <img src={s.icon} alt={s.name} className="h-5 w-5" />
+                    <FontAwesomeIcon
+                      icon={iconMap[s.icon]}
+                      className="text-xl"
+                    />
                     <span>{s.name}</span>
                   </a>
                 ))}
