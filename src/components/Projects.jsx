@@ -1,8 +1,18 @@
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
 const Projects = ({ projects }) => {
+  const { theme } = useContext(ThemeContext);
+  const isDark = theme === "dark";
+
   return (
-    <section id="projects" className="bg-lime-200">
+    <section id="projects" className={isDark ? "bg-[#1A210B]" : "bg-[#CBF281]"}>
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <h2 className="text-6xl font-bold text-indigo-700 mb-16">
+        <h2
+          className={`text-6xl font-bold mb-16 ${
+            isDark ? "text-[#CBF281]" : "text-[#4731D3]"
+          }`}
+        >
           {projects.title}
         </h2>
 
@@ -10,7 +20,9 @@ const Projects = ({ projects }) => {
           {projects.items.map((item) => (
             <article
               key={item.name}
-              className="bg-white rounded-3xl shadow-xl overflow-hidden transition hover:shadow-2xl"
+              className={`rounded-3xl shadow-xl overflow-hidden transition hover:shadow-2xl ${
+                isDark ? "bg-[#2B2727]" : "bg-white"
+              }`}
             >
               <div className="grid grid-cols-2 gap-8">
                 <div className="h-full overflow-hidden">
@@ -20,12 +32,21 @@ const Projects = ({ projects }) => {
                     className="h-full w-full object-cover"
                   />
                 </div>
+
                 <div className="py-10 px-10">
-                  <h3 className="text-4xl font-bold text-indigo-700">
+                  <h3
+                    className={`text-4xl font-bold ${
+                      isDark ? "text-[#8173DA]" : "text-[#4731D3]"
+                    }`}
+                  >
                     {item.name}
                   </h3>
 
-                  <p className="mt-4 text-gray-700 leading-relaxed">
+                  <p
+                    className={`mt-4 leading-relaxed ${
+                      isDark ? "text-white/80" : "text-gray-700"
+                    }`}
+                  >
                     {item.description}
                   </p>
 
@@ -33,7 +54,11 @@ const Projects = ({ projects }) => {
                     {item.tech.map((t) => (
                       <li
                         key={t}
-                        className="px-4 py-1.5 rounded-full bg-indigo-600 text-white hover:bg-indigo-700 transition"
+                        className={`px-4 py-1.5 rounded-full transition ${
+                          isDark
+                            ? "bg-[#8173DA] text-white"
+                            : "bg-[#4731D3] text-white hover:bg-[#4731D3]"
+                        }`}
                       >
                         {t}
                       </li>
@@ -45,7 +70,9 @@ const Projects = ({ projects }) => {
                       href={item.live}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-block mr-6 text-sm font-semibold text-indigo-900 underline underline-offset-4"
+                      className={`inline-block mr-6 text-sm font-semibold underline underline-offset-4 ${
+                        isDark ? "text-[#CBF281]" : "text-[#4731D3]"
+                      }`}
                     >
                       View Live
                     </a>
@@ -54,7 +81,9 @@ const Projects = ({ projects }) => {
                       href={item.github}
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-block mr-6 text-sm font-semibold text-indigo-900 underline underline-offset-4"
+                      className={`inline-block mr-6 text-sm font-semibold underline underline-offset-4 ${
+                        isDark ? "text-[#CBF281]" : "text-[#4731D3]"
+                      }`}
                     >
                       Github
                     </a>
