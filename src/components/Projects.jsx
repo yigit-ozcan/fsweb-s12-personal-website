@@ -24,7 +24,7 @@ const Projects = ({ projects }) => {
                 isDark ? "bg-[#2B2727]" : "bg-white"
               }`}
             >
-              <div className="grid grid-cols-2 gap-8">
+              <div className="hidden md:grid grid-cols-2 gap-8">
                 <div className="h-full overflow-hidden">
                   <img
                     src={item.image}
@@ -54,10 +54,10 @@ const Projects = ({ projects }) => {
                     {item.tech.map((t) => (
                       <li
                         key={t}
-                        className={`px-4 py-1.5 rounded-full transition ${
+                        className={`px-4 py-1.5 rounded-full ${
                           isDark
                             ? "bg-[#8173DA] text-white"
-                            : "bg-[#4731D3] text-white hover:bg-[#4731D3]"
+                            : "bg-[#4731D3] text-white"
                         }`}
                       >
                         {t}
@@ -70,7 +70,7 @@ const Projects = ({ projects }) => {
                       href={item.live}
                       target="_blank"
                       rel="noreferrer"
-                      className={`inline-block mr-6 text-sm font-semibold underline underline-offset-4 ${
+                      className={`mr-6 text-sm font-semibold underline underline-offset-4 ${
                         isDark ? "text-[#CBF281]" : "text-[#4731D3]"
                       }`}
                     >
@@ -81,7 +81,73 @@ const Projects = ({ projects }) => {
                       href={item.github}
                       target="_blank"
                       rel="noreferrer"
-                      className={`inline-block mr-6 text-sm font-semibold underline underline-offset-4 ${
+                      className={`text-sm font-semibold underline underline-offset-4 ${
+                        isDark ? "text-[#CBF281]" : "text-[#4731D3]"
+                      }`}
+                    >
+                      Github
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/*MOBILE*/}
+              <div className="md:hidden flex flex-col">
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  className="w-full h-56 object-cover"
+                />
+
+                <div className="p-6">
+                  <h3
+                    className={`text-2xl font-bold ${
+                      isDark ? "text-[#8173DA]" : "text-[#4731D3]"
+                    }`}
+                  >
+                    {item.name}
+                  </h3>
+
+                  <p
+                    className={`mt-3 text-sm leading-relaxed ${
+                      isDark ? "text-white/80" : "text-gray-700"
+                    }`}
+                  >
+                    {item.description}
+                  </p>
+
+                  <ul className="flex flex-wrap gap-2 mt-4 text-xs font-medium">
+                    {item.tech.map((t) => (
+                      <li
+                        key={t}
+                        className={`px-3 py-1 rounded-full ${
+                          isDark
+                            ? "bg-[#8173DA] text-white"
+                            : "bg-[#4731D3] text-white"
+                        }`}
+                      >
+                        {t}
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-4 flex gap-4">
+                    <a
+                      href={item.live}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`text-sm font-semibold underline ${
+                        isDark ? "text-[#CBF281]" : "text-[#4731D3]"
+                      }`}
+                    >
+                      Live
+                    </a>
+
+                    <a
+                      href={item.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className={`text-sm font-semibold underline ${
                         isDark ? "text-[#CBF281]" : "text-[#4731D3]"
                       }`}
                     >

@@ -12,53 +12,71 @@ const Header = () => {
     <header className="absolute top-0 left-0 w-full h-20 z-30">
       <div className="absolute inset-0">
         <div
-          className={`absolute left-0 top-0 h-full w-[65%]
-            ${isDark ? "bg-[#171043]" : "bg-[#4731D3]"}
-          `}
+          className={`absolute left-0 top-0 h-full w-[65%] ${
+            isDark ? "bg-[#171043]" : "bg-indigo-700"
+          }`}
         />
         <div
-          className={`absolute right-0 top-0 h-full w-[35%]
-            ${isDark ? "bg-[#211F0B]" : "bg-[#CBF281]"}
-          `}
+          className={`absolute right-0 top-0 h-full w-[35%] ${
+            isDark ? "bg-[#211F0B]" : "bg-[#CBF281]"
+          }`}
         />
       </div>
 
       <div className="relative h-full grid grid-cols-[65%_35%] items-center px-6">
         <div className="flex items-center max-w-6xl mx-auto w-full">
-          <h1 className={`font-bold text-3xl pl-88 text-[#CBF281]`}>yiğit</h1>
-
+          <h1 className="font-bold text-3xl pl-88 text-[#CBF281]">yiğit</h1>
           <button
             onClick={toggleLang}
-            className={`ml-auto text-l font-semibold tracking-widest text-[#CBF281]`}
+            className="ml-auto hidden md:block text-l font-semibold tracking-widest text-[#CBF281]"
           >
             {lang === "en" ? "TÜRKÇE'YE GEÇ" : "SWITCH TO ENGLISH"}
           </button>
         </div>
-
-        <div className="flex items-center gap-3 pl-6">
+        <div className="hidden md:flex items-center gap-3 pl-6">
           <span
-            className={`w-[110px] text-l font-semibold tracking-widest
-              whitespace-nowrap text-right
-              ${isDark ? "text-gray-300" : "text-[#4731D3]"}
-            `}
+            className={`w-[110px] text-l font-semibold tracking-widest whitespace-nowrap text-right ${
+              isDark ? "text-gray-300" : "text-indigo-700"
+            }`}
           >
-            {isDark ? "DARK MODE" : "LIGHT MODE"}
+            DARK MODE
           </span>
 
           <button
             onClick={toggleTheme}
-            className={`relative w-12 h-6 rounded-full
-              ${isDark ? "bg-gray-600" : "bg-[#4731D3]"}
-            `}
+            className={`relative w-12 h-6 rounded-full ${
+              isDark ? "bg-gray-600" : "bg-indigo-300"
+            }`}
           >
             <span
-              className={`absolute top-1 left-1 h-4 w-4 rounded-full
-                bg-yellow-400 transition-transform duration-300
-                ${isDark ? "translate-x-[24px]" : "translate-x-0"}
-              `}
+              className={`absolute top-1 left-1 h-4 w-4 rounded-full bg-yellow-400 transition-transform duration-300 ${
+                isDark ? "translate-x-[24px]" : "translate-x-0"
+              }`}
             />
           </button>
         </div>
+      </div>
+
+      {/* MOBILE*/}
+      <div className="md:hidden absolute top-6 right-6 flex items-center gap-4">
+        <button
+          onClick={toggleLang}
+          className="text-sm font-bold text-[#CBF281]"
+        >
+          {lang === "en" ? "TR" : "EN"}
+        </button>
+        <button
+          onClick={toggleTheme}
+          className={`relative w-10 h-5 rounded-full ${
+            isDark ? "bg-gray-600" : "bg-indigo-300"
+          }`}
+        >
+          <span
+            className={`absolute top-[3px] left-[3px] h-3.5 w-3.5 rounded-full bg-yellow-400 transition-transform ${
+              isDark ? "translate-x-[20px]" : "translate-x-0"
+            }`}
+          />
+        </button>
       </div>
     </header>
   );

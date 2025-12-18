@@ -26,13 +26,11 @@ const Hero = ({ hero }) => {
           `}
         />
       </div>
-      <div className="relative z-10 flex min-h-screen items-center">
+      <div className="relative z-10 hidden md:flex min-h-screen items-center">
         <div className="mx-auto max-w-6xl px-6 pt-32 pb-12">
           <div className="grid grid-cols-2 items-center gap-12">
             <div>
-              <h1
-                className={`text-6xl font-extrabold leading-tight text-[#CBF281]`}
-              >
+              <h1 className="text-6xl font-extrabold leading-tight text-[#CBF281]">
                 {hero.title}
               </h1>
 
@@ -68,6 +66,7 @@ const Hero = ({ hero }) => {
                 ))}
               </div>
             </div>
+
             <div>
               <div
                 className={`mx-auto w-[450px] h-[550px] overflow-hidden rounded-2xl shadow-2xl
@@ -82,6 +81,52 @@ const Hero = ({ hero }) => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/*MOBILE*/}
+      <div className="relative z-10 md:hidden flex flex-col items-center text-center px-6 pt-28 pb-16">
+        <h1 className="text-4xl font-extrabold text-[#CBF281]">{hero.title}</h1>
+
+        <p
+          className={`mt-4 text-base font-semibold max-w-sm
+            ${isDark ? "text-gray-300" : "text-white/90"}
+          `}
+        >
+          {hero.subtitle}
+        </p>
+
+        <div className="mt-6 flex flex-col gap-3 w-full items-center">
+          {hero.socials.map((s) => (
+            <a
+              key={s.name}
+              href={s.url}
+              target="_blank"
+              rel="noreferrer"
+              className={`w-[200px] inline-flex justify-center items-center gap-3 rounded-md px-4 py-3 text-sm font-semibold
+                ${
+                  isDark
+                    ? "bg-[#111827] text-[#CBF281] border border-gray-700"
+                    : "bg-white text-[#4731D3]"
+                }
+              `}
+            >
+              <FontAwesomeIcon icon={iconMap[s.icon]} className="text-lg" />
+              <span>{s.name}</span>
+            </a>
+          ))}
+        </div>
+
+        <div
+          className={`mt-10 w-[260px] h-[340px] overflow-hidden rounded-xl shadow-xl
+            ${isDark ? "ring-1 ring-gray-700" : ""}
+          `}
+        >
+          <img
+            src={hero.profileImage}
+            alt="Profile"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
     </section>

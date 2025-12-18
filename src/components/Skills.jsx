@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
   return (
     <section id="skills" className={isDark ? "bg-[#252128]" : "bg-white"}>
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <div className="grid grid-cols-3 gap-x-24">
+        <div className="hidden md:grid grid-cols-3 gap-x-24">
           <h2
             className={`text-5xl font-bold
               ${isDark ? "text-[#CBF281]" : "text-[#4731D3]"}
@@ -31,9 +31,47 @@ const Skills = ({ skills }) => {
                     className="h-full w-full object-cover"
                   />
                 </div>
+
                 <span
                   className={`text-lg font-medium uppercase tracking-wide
                     ${isDark ? "text-gray-300" : "text-gray-500"}
+                  `}
+                >
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/*MOBILE*/}
+        <div className="md:hidden">
+          <h2
+            className={`text-3xl font-bold text-center mb-12
+              ${isDark ? "text-[#CBF281]" : "text-[#4731D3]"}
+            `}
+          >
+            {skills.title}
+          </h2>
+
+          <div className="grid grid-cols-1 gap-y-8">
+            {skills.items.map((item) => (
+              <div key={item.name} className="flex items-center gap-4">
+                <div
+                  className={`h-16 w-16 rounded-lg overflow-hidden shadow
+                    ${isDark ? "bg-[#111827]" : "bg-white"}
+                  `}
+                >
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+
+                <span
+                  className={`text-base font-semibold uppercase tracking-wide
+                    ${isDark ? "text-gray-300" : "text-gray-600"}
                   `}
                 >
                   {item.name}
