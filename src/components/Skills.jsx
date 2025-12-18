@@ -2,16 +2,26 @@ const Skills = ({ skills }) => {
   return (
     <section id="skills">
       <div className="mx-auto max-w-6xl px-6 py-24">
-        <h2 className="text-3xl font-bold text-center mb-16">{skills.title}</h2>
-        <div className="grid grid-cols-6 gap-12 justify-items-center">
-          {skills.items.map((item) => (
-            <div key={item.name} className="flex flex-col items-center gap-4">
-              <img src={item.icon} alt={item.name} className="h-16 w-16" />
-              <span className="text-sm font-medium text-gray-800">
-                {item.name}
-              </span>
-            </div>
-          ))}
+        <div className="grid grid-cols-3 gap-x-24">
+          <h2 className="text-5xl font-extrabold text-indigo-700">
+            {skills.title}
+          </h2>
+          <div className="col-span-2 grid grid-cols-2 gap-x-24 gap-y-12">
+            {skills.items.map((item) => (
+              <div key={item.name} className="flex items-center gap-6">
+                <div className="h-28 w-28 rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src={item.icon}
+                    alt={item.name}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <span className="text-lg font-medium text-gray-500 uppercase tracking-wide">
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

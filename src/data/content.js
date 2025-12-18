@@ -22,11 +22,12 @@ export const content = {
     skills: {
       title: "Skills",
       items: [
-        { name: "HTML", icon: "/assets/html.svg" },
-        { name: "CSS", icon: "/assets/css.svg" },
-        { name: "JavaScript", icon: "/assets/js.svg" },
-        { name: "React", icon: "/assets/react.svg" },
-        { name: "Tailwind CSS", icon: "/assets/tailwind.svg" },
+        { name: "JavaScript", icon: "/assets/skills/java-script.jpg" },
+        { name: "Node", icon: "/assets/skills/node-js.jpg" },
+        { name: "React", icon: "/assets/skills/react.png" },
+        { name: "VSCode", icon: "/assets/skills/visual-studio-code.png" },
+        { name: "Redux", icon: "/assets/skills/redux.png" },
+        { name: "Figma", icon: "/assets/skills/figma.jpg" },
       ],
     },
 
@@ -41,6 +42,7 @@ export const content = {
         },
         { label: "Preferred Role", value: "Frontend, UI" },
       ],
+      image: "/assets/profile/profile-image.png",
       aboutText:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
     },
@@ -105,11 +107,12 @@ export const content = {
     skills: {
       title: "Yetenekler",
       items: [
-        { name: "HTML", icon: "/assets/html.svg" },
-        { name: "CSS", icon: "/assets/css.svg" },
-        { name: "JavaScript", icon: "/assets/js.svg" },
-        { name: "React", icon: "/assets/react.svg" },
-        { name: "Tailwind CSS", icon: "/assets/tailwind.svg" },
+        { name: "JavaScript", icon: "/assets/skills/java-script.jpg" },
+        { name: "Node", icon: "/assets/skills/node-js.jpg" },
+        { name: "React", icon: "/assets/skills/react.png" },
+        { name: "VSCode", icon: "/assets/skills/visual-studio-code.png" },
+        { name: "Redux", icon: "/assets/skills/redux.png" },
+        { name: "Figma", icon: "/assets/skills/figma.jpg" },
       ],
     },
 
@@ -124,7 +127,7 @@ export const content = {
         },
         { label: "Tercih Ettiği Rol", value: "Frontend, UI" },
       ],
-      image: "/assets/profile-section.png",
+      image: "/assets/profile/profile-image.png",
       aboutText:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.\n\nMinima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
     },
